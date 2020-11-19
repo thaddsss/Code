@@ -5,22 +5,22 @@
 </head>
 <body>
 
-<input type="text" id="A" placeholder="Enter your number">
-<input type="text" id="B" placeholder="Enter your limits">
-<input type="text" id="C" placeholder="Enter your number">
+<input type="text" id="H1" placeholder="Enter your number">
+<input type="text" id="H2" placeholder="Enter your limits">
+<input type="text" id="H3" placeholder="Enter your number">
 
 <button onclick="multiply()">Click Me</button>
 <script>
 
 function multiply(){
 
-	var A =+document.getElementById("A").value;
-	var B =+document.getElementById("B").value;
-	var C =+document.getElementById("C").value;
-	for (var x=A; x<=B; x++)
+	var H1 =+document.getElementById("H1").value;
+	var H2 =+document.getElementById("H2").value;
+	var H3 =+document.getElementById("H3").value;
+	for (var x=H1; x<=H2; x++)
 	{
-		var mul = x * C;
-		document.write(x + " X " + C + " = " + mul + " <br>");
+		var mul = x * H3;
+		document.write(x + " X " + H3 + " = " + mul + " <br>");
 	}
 }
 
