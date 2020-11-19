@@ -5,9 +5,9 @@
 </head>
 <body>
 
-<input type="text" id="A">
-<input type="text" id="B">
-<input type="text" id="C">
+<input type="text" id="A" placeholder="Enter your number">
+<input type="text" id="B" placeholder="Enter your limits">
+<input type="text" id="C" placeholder="Enter your number">
 
 <button onclick="multiply()">Click Me</button>
 <script>
@@ -17,9 +17,10 @@ function multiply(){
 	var A = document.getElementById("A").value;
 	var B = document.getElementById("B").value;
 	var C = document.getElementById("C").value;
-	for (var x=A; x<=C; x++){
-		var mul = x * B;
-		document.write(x + " X " + B + " = " + mul + " <br>");
+	for (var x=A; x<=B; x++)
+	{
+		var mul = x * C;
+		document.write(x + " X " + C + " = " + mul + " <br>");
 	}
 }
 
